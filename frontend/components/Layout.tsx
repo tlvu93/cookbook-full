@@ -1,5 +1,4 @@
 import React, { ReactNode } from 'react';
-import Link from 'next/link';
 import Head from 'next/head';
 import Header from './Header';
 
@@ -9,7 +8,7 @@ type Props = {
 };
 
 const Layout = ({ children, title = 'This is the default title' }: Props) => (
-  <div>
+  <div className='bg-gray-100 min-h-screen'>
     <Head>
       <title>{title}</title>
       <meta charSet='utf-8' />
