@@ -1,5 +1,9 @@
+import Skeleton from 'react-loading-skeleton';
 import Container from './Container';
+import SkeletonInspirationCard from './Skeleton/SkeletonInspirationCard';
+
 const API_URL = 'https://wbs-cookbook-backend.herokuapp.com';
+
 const RecipeCard = (data) => {
   console.log(data);
   console.log(API_URL + data.attributes.images.data[0].attributes.url);
@@ -98,8 +102,9 @@ const RecipeCard = (data) => {
   );
 };
 
-const InspirationList = ({ recipes }) => {
-  console.log(recipes);
+const InspirationList = ({ recipes, loading }) => {
+  console.log(recipes, loading);
+
   return (
     <Container>
       <div>
@@ -107,9 +112,9 @@ const InspirationList = ({ recipes }) => {
           <h1 className='text-2xl'>Inspiration</h1>
         </div>
         <div className='flex flex-wrap'>
-          {/* {recipes.data.map((data) => (
-            <RecipeCard {...data} />
-          ))} */}
+          {loading
+            ? [...Array(5)].map(() => <SkeletonInspirationCard />)
+            : recipes.data.map((data) => <RecipeCard {...data} />)}
         </div>
       </div>
     </Container>
