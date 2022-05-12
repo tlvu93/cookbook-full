@@ -21,16 +21,19 @@ const SkeletonInspirationCard = () => {
             </p>
             <div className='flex flex-col'>
               {/* Time Container 3 times*/}
-              {[...Array(3)].map(() => (
-                <div className='flex items-center space-x-2'>
+              {[...Array(3)].map((_, i) => (
+                <div key={'prep-' + i} className='flex items-center space-x-2'>
                   <Skeleton width={150} height={16} />
                 </div>
               ))}
             </div>
             <div>
               {/* Tags 3 Times*/}
-              {[...Array(3)].map(() => (
-                <span className='inline-flex items-center justify-center  py-1 text-xs font-bold leading-none  rounded-full'>
+              {[...Array(3)].map((_, i) => (
+                <span
+                  key={'tag-' + i}
+                  className='inline-flex items-center justify-center  py-1 text-xs font-bold leading-none  rounded-full'
+                >
                   <Skeleton width={30} />
                 </span>
               ))}
