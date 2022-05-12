@@ -1,8 +1,5 @@
 import Container from './Container';
-import mockData from '../data/recipes_mockup.json';
-
 const API_URL = 'https://wbs-cookbook-backend.herokuapp.com';
-
 const RecipeCard = (data) => {
   console.log(data);
   console.log(API_URL + data.attributes.images.data[0].attributes.url);
@@ -101,7 +98,8 @@ const RecipeCard = (data) => {
   );
 };
 
-const InspirationList = () => {
+const InspirationList = ({ recipes }) => {
+  console.log(recipes);
   return (
     <Container>
       <div>
@@ -109,9 +107,9 @@ const InspirationList = () => {
           <h1 className='text-2xl'>Inspiration</h1>
         </div>
         <div className='flex flex-wrap'>
-          {mockData.data.map((data) => (
+          {/* {recipes.data.map((data) => (
             <RecipeCard {...data} />
-          ))}
+          ))} */}
         </div>
       </div>
     </Container>

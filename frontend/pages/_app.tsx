@@ -1,6 +1,13 @@
+import { ApolloProvider } from '@apollo/client';
 import './index.css';
-import IndexPage from './index';
+import client from '../apollo/apollo';
 
-export default function MyApp({ Component, pageProps }) {
-  return <IndexPage {...pageProps} />;
+function MyApp({ Component, pageProps }) {
+  return (
+    <ApolloProvider client={client}>
+      <Component {...pageProps} />;
+    </ApolloProvider>
+  );
 }
+
+export default MyApp;
