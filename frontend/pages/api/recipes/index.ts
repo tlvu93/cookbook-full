@@ -1,5 +1,4 @@
-import { NextApiRequest, NextApiResponse } from 'next';
-import { sampleUserData } from '../../../utils/sample-data';
+import {NextApiRequest, NextApiResponse} from 'next';
 
 const API_URL = 'https://wbs-cookbook-backend.herokuapp.com/api';
 const RECIPE_URL = API_URL + '/recipes';
@@ -13,7 +12,7 @@ const fetchOptions: RequestInit = {
 
 const handler = (_req: NextApiRequest, res: NextApiResponse) => {
   fetch(RECIPE_URL + POPULATE, fetchOptions).then((response) =>
-    console.log(response)
+    console.log(response),
   );
 
   // try {

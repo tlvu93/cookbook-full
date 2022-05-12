@@ -58,14 +58,14 @@
           ]
         },
         "recipe_ingredients": [
-          { "id": 8, "amount": 300 },
-          { "id": 9, "amount": 1 },
-          { "id": 10, "amount": 1 },
-          { "id": 11, "amount": 100 },
-          { "id": 13, "amount": 1 },
-          { "id": 12, "amount": 1 },
-          { "id": 14, "amount": 125 },
-          { "id": 15, "amount": 1 }
+          {"id": 8, "amount": 300},
+          {"id": 9, "amount": 1},
+          {"id": 10, "amount": 1},
+          {"id": 11, "amount": 100},
+          {"id": 13, "amount": 1},
+          {"id": 12, "amount": 1},
+          {"id": 14, "amount": 125},
+          {"id": 15, "amount": 1}
         ],
         "Step": [
           {
@@ -145,16 +145,16 @@
           ]
         },
         "recipe_ingredients": [
-          { "id": 16, "amount": 1 },
-          { "id": 17, "amount": 2 },
-          { "id": 18, "amount": 1 },
-          { "id": 19, "amount": 1 },
-          { "id": 20, "amount": 2 },
-          { "id": 21, "amount": 75 },
-          { "id": 22, "amount": 1 },
-          { "id": 23, "amount": 250 },
-          { "id": 24, "amount": 400 },
-          { "id": 25, "amount": 350 }
+          {"id": 16, "amount": 1},
+          {"id": 17, "amount": 2},
+          {"id": 18, "amount": 1},
+          {"id": 19, "amount": 1},
+          {"id": 20, "amount": 2},
+          {"id": 21, "amount": 75},
+          {"id": 22, "amount": 1},
+          {"id": 23, "amount": 250},
+          {"id": 24, "amount": 400},
+          {"id": 25, "amount": 350}
         ],
         "Step": []
       }
@@ -239,13 +239,13 @@
           ]
         },
         "recipe_ingredients": [
-          { "id": 26, "amount": 1 },
-          { "id": 27, "amount": 2 },
-          { "id": 28, "amount": 1 },
-          { "id": 29, "amount": 1 },
-          { "id": 30, "amount": 1 },
-          { "id": 31, "amount": 2 },
-          { "id": 32, "amount": 2 }
+          {"id": 26, "amount": 1},
+          {"id": 27, "amount": 2},
+          {"id": 28, "amount": 1},
+          {"id": 29, "amount": 1},
+          {"id": 30, "amount": 1},
+          {"id": 31, "amount": 2},
+          {"id": 32, "amount": 2}
         ],
         "Step": [
           {
@@ -268,7 +268,7 @@
             "id": 15,
             "Step_description": "Pour into a bowl and top with remaining ingredients."
           },
-          { "id": 13, "Step_description": null }
+          {"id": 13, "Step_description": null}
         ]
       }
     },
@@ -319,13 +319,13 @@
           ]
         },
         "recipe_ingredients": [
-          { "id": 1, "amount": 2 },
-          { "id": 2, "amount": 1 },
-          { "id": 3, "amount": 1 },
-          { "id": 4, "amount": 1 },
-          { "id": 6, "amount": 1 },
-          { "id": 5, "amount": 3 },
-          { "id": 7, "amount": 12 }
+          {"id": 1, "amount": 2},
+          {"id": 2, "amount": 1},
+          {"id": 3, "amount": 1},
+          {"id": 4, "amount": 1},
+          {"id": 6, "amount": 1},
+          {"id": 5, "amount": 3},
+          {"id": 7, "amount": 12}
         ],
         "Step": [
           {
@@ -348,12 +348,12 @@
             "id": 3,
             "Step_description": "Empty serving bowl of hot water. Dry it and add hot pasta mixture. Stir in cheese mixture, adding some reserved pasta water if needed for creaminess. Serve immediately, dressing it with a bit of additional grated pecorino and pepper."
           },
-          { "id": 1, "Step_description": null }
+          {"id": 1, "Step_description": null}
         ]
       }
     }
   ],
   "meta": {
-    "pagination": { "page": 1, "pageSize": 25, "pageCount": 1, "total": 4 }
+    "pagination": {"page": 1, "pageSize": 25, "pageCount": 1, "total": 4}
   }
 }
